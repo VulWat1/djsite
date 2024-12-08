@@ -1,0 +1,13 @@
+{% extends "store/layout.html" %}
+
+{% block title %} Удаление статьи {% endblock title %}
+
+{% block body %}
+    <div class="features">
+        <h1>Удаление статьи</h1>
+        <form method="post">
+            {% csrf_token %}<br>
+            <button class="btn btn-danger" type="submit">Удалить статью</button>
+        </form>
+    </div>
+{% endblock body %}
